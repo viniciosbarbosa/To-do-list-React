@@ -8,7 +8,7 @@ type TodoWithOptionalProps = {
 
 type AddNewTodo = {
   type: "ADD_NEW_TODO";
-  paylodad: Todo | Array<Todo>;
+  payload: Todo | Array<Todo>;
 };
 
 type ChangeTodo = {
