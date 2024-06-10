@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { TodoContext } from "../../contexts/TodoContext";
+import EmptyIcon from "../../assets/clipboard.svg?react";
 
 import style from "./index.module.css";
 import { TodoItem } from "../TodoItem";
@@ -21,6 +22,7 @@ export const TodoList = () => {
 
       {todos.length < 1 && (
         <div className={style.emptyContainer}>
+          <img src={EmptyIcon} alt="empty" />
           <p className={style.emptyLabel}>
             <strong>You have no task registered</strong>
             <br />

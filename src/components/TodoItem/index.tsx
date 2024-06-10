@@ -2,6 +2,7 @@ import { TodoContext } from "../../contexts/TodoContext";
 import { Todo } from "../../types/Todo";
 import { ChangeEvent, useContext } from "react";
 import styles from "./TodoItem.module.css";
+import TrashIcon from "../../assets/trash.svg?react";
 
 type Props = {
   data: Todo;
@@ -43,10 +44,9 @@ export const TodoItem = ({ data, dataIndex }: Props) => {
       </div>
 
       <div className={styles.deleteTaskContainer}>
-        <button
-          className={styles.deleteTaskBtn}
-          onClick={handleDelete}
-        ></button>
+        <button className={styles.deleteTaskBtn} onClick={handleDelete}>
+          <img src={TrashIcon} alt="trash" />
+        </button>
       </div>
     </div>
   );

@@ -28,9 +28,7 @@ export const Header = () => {
 
   return (
     <div className={style.container}>
-      <div className={style.container}>
-        <img src="" alt="" />
-      </div>
+      <div className={style.container}></div>
 
       <div className={style.newTaskContainer}>
         <div className={style.newTaskInput}>
