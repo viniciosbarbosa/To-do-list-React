@@ -1,4 +1,4 @@
 export type Todo = {
   title: string;
-  isDone: string;
+  isDone: boolean;
 };
